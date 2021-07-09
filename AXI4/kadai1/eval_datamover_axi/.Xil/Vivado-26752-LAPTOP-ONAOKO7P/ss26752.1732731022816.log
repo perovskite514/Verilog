@@ -1,0 +1,11 @@
+srcscan starts
+=============== Using precompiled files for SV std libs ===========
+INFO: The veri library search path for library "std" is now "C:/Xilinx/Vivado/2020.2/data/precomp_hsv/sv/std" (VERI-1509)
+INFO: The veri library search path for library "uvm" is now "C:/Xilinx/Vivado/2020.2/data/precomp_hsv/sv/uvm" (VERI-1509)
+INFO: analyzing module datamover_axi_wrap (VERI-9002)
+INFO: analyzing module datamover_axi (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:datamover_axi_wrap
+END of tops
+C:/Users/tansei/axi_archive/datamover_axi_wrap.v(3): INFO: compiling module 'datamover_axi_wrap_default' (VERI-1018)
+srcscan exits with return value 0

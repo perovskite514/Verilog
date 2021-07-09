@@ -1,0 +1,1893 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Jun  3 14:35:28 2021
+| Host         : LAPTOP-ONAOKO7P running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : design_1_wrapper
+| Device       : 7a35ti-csg324
+| Speed File   : -1L  PRODUCTION 1.23 2018-06-13
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (2)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (2)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 2 ports with no output delay but user has a false path constraint (MEDIUM)
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -3.565     -108.622                     55                  240        0.142        0.000                      0                  240        3.000        0.000                       0                   241  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                            Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                            ------------       ----------      --------------
+sys_clock                        {0.000 5.000}      10.000          100.000         
+  clk_out1_design_1_clk_wiz_0_0  {0.000 5.000}      10.000          100.000         
+  clkfbout_design_1_clk_wiz_0_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clock                                                                                                                                                                          3.000        0.000                       0                     1  
+  clk_out1_design_1_clk_wiz_0_0       -3.565     -108.622                     55                  240        0.142        0.000                      0                  240        4.500        0.000                       0                   237  
+  clkfbout_design_1_clk_wiz_0_0                                                                                                                                                    7.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clock
+  To Clock:  sys_clock
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clock
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { sys_clock }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_design_1_clk_wiz_0_0
+  To Clock:  clk_out1_design_1_clk_wiz_0_0
+
+Setup :           55  Failing Endpoints,  Worst Slack       -3.565ns,  Total Violation     -108.622ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.142ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -3.565ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        13.476ns  (logic 4.403ns (32.672%)  route 9.073ns (67.328%))
+  Logic Levels:           21  (CARRY4=6 LUT2=1 LUT4=3 LUT5=5 LUT6=6)
+  Clock Path Skew:        -0.045ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.520ns = ( 8.480 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.564ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.656    10.121    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X52Y64         LUT4 (Prop_lut4_I2_O)        0.301    10.422 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[2]_i_1/O
+                         net (fo=2, routed)           1.105    11.527    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[2]_i_1_n_0
+    SLICE_X48Y64         LUT6 (Prop_lut6_I0_O)        0.124    11.651 f  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[0]_i_7/O
+                         net (fo=1, routed)           0.402    12.053    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[0]_i_7_n_0
+    SLICE_X49Y65         LUT6 (Prop_lut6_I4_O)        0.124    12.177 f  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[0]_i_4/O
+                         net (fo=1, routed)           0.264    12.441    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[0]_i_4_n_0
+    SLICE_X49Y65         LUT5 (Prop_lut5_I4_O)        0.124    12.565 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[0]_i_1/O
+                         net (fo=1, routed)           0.000    12.565    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[0]_i_1_n_0
+    SLICE_X49Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.432     8.480    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X49Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]/C
+                         clock pessimism              0.564     9.044    
+                         clock uncertainty           -0.074     8.970    
+    SLICE_X49Y65         FDRE (Setup_fdre_C_D)        0.031     9.001    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]
+  -------------------------------------------------------------------
+                         required time                          9.001    
+                         arrival time                         -12.565    
+  -------------------------------------------------------------------
+                         slack                                 -3.565    
+
+Slack (VIOLATED) :        -3.378ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        13.350ns  (logic 4.279ns (32.053%)  route 9.071ns (67.947%))
+  Logic Levels:           20  (CARRY4=6 LUT2=1 LUT4=2 LUT5=6 LUT6=5)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.520ns = ( 8.480 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          1.153    10.618    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X52Y65         LUT5 (Prop_lut5_I2_O)        0.301    10.919 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_13/O
+                         net (fo=3, routed)           0.678    11.597    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_13_n_0
+    SLICE_X53Y65         LUT5 (Prop_lut5_I0_O)        0.124    11.721 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[1]_i_2/O
+                         net (fo=1, routed)           0.594    12.315    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[1]_i_2_n_0
+    SLICE_X52Y66         LUT6 (Prop_lut6_I1_O)        0.124    12.439 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[1]_i_1/O
+                         net (fo=1, routed)           0.000    12.439    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[1]_i_1_n_0
+    SLICE_X52Y66         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.432     8.480    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X52Y66         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]/C
+                         clock pessimism              0.578     9.058    
+                         clock uncertainty           -0.074     8.984    
+    SLICE_X52Y66         FDRE (Setup_fdre_C_D)        0.077     9.061    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]
+  -------------------------------------------------------------------
+                         required time                          9.061    
+                         arrival time                         -12.439    
+  -------------------------------------------------------------------
+                         slack                                 -3.378    
+
+Slack (VIOLATED) :        -3.069ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        13.042ns  (logic 4.279ns (32.809%)  route 8.763ns (67.191%))
+  Logic Levels:           20  (CARRY4=6 LUT2=1 LUT4=3 LUT5=5 LUT6=5)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.518ns = ( 8.482 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          1.153    10.618    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X52Y65         LUT5 (Prop_lut5_I2_O)        0.301    10.919 f  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_13/O
+                         net (fo=3, routed)           0.493    11.412    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_13_n_0
+    SLICE_X51Y65         LUT6 (Prop_lut6_I0_O)        0.124    11.536 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_4/O
+                         net (fo=3, routed)           0.471    12.007    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_4_n_0
+    SLICE_X50Y64         LUT4 (Prop_lut4_I0_O)        0.124    12.131 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_2/O
+                         net (fo=1, routed)           0.000    12.131    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_2_n_0
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.434     8.482    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]/C
+                         clock pessimism              0.578     9.060    
+                         clock uncertainty           -0.074     8.986    
+    SLICE_X50Y64         FDRE (Setup_fdre_C_D)        0.077     9.063    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]
+  -------------------------------------------------------------------
+                         required time                          9.063    
+                         arrival time                         -12.131    
+  -------------------------------------------------------------------
+                         slack                                 -3.069    
+
+Slack (VIOLATED) :        -3.062ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        13.037ns  (logic 4.279ns (32.821%)  route 8.758ns (67.179%))
+  Logic Levels:           20  (CARRY4=6 LUT2=1 LUT4=2 LUT5=5 LUT6=6)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.518ns = ( 8.482 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          1.153    10.618    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X52Y65         LUT5 (Prop_lut5_I2_O)        0.301    10.919 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_13/O
+                         net (fo=3, routed)           0.493    11.412    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_13_n_0
+    SLICE_X51Y65         LUT6 (Prop_lut6_I0_O)        0.124    11.536 f  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_4/O
+                         net (fo=3, routed)           0.466    12.002    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_4_n_0
+    SLICE_X50Y64         LUT6 (Prop_lut6_I5_O)        0.124    12.126 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[2]_i_1/O
+                         net (fo=1, routed)           0.000    12.126    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[2]_i_1_n_0
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.434     8.482    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]/C
+                         clock pessimism              0.578     9.060    
+                         clock uncertainty           -0.074     8.986    
+    SLICE_X50Y64         FDRE (Setup_fdre_C_D)        0.079     9.065    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.065    
+                         arrival time                         -12.126    
+  -------------------------------------------------------------------
+                         slack                                 -3.062    
+
+Slack (VIOLATED) :        -2.989ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        12.915ns  (logic 4.279ns (33.131%)  route 8.636ns (66.869%))
+  Logic Levels:           20  (CARRY4=6 LUT2=1 LUT4=2 LUT5=5 LUT6=6)
+  Clock Path Skew:        -0.030ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.519ns = ( 8.481 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.729    10.194    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X53Y65         LUT5 (Prop_lut5_I2_O)        0.301    10.495 f  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[3]_i_5/O
+                         net (fo=2, routed)           0.446    10.941    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[3]_i_5_n_0
+    SLICE_X48Y65         LUT6 (Prop_lut6_I0_O)        0.124    11.065 f  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[3]_i_3/O
+                         net (fo=2, routed)           0.816    11.880    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[3]_i_3_n_0
+    SLICE_X51Y65         LUT6 (Prop_lut6_I5_O)        0.124    12.004 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[3]_i_1/O
+                         net (fo=1, routed)           0.000    12.004    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[3]_i_1_n_0
+    SLICE_X51Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.433     8.481    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X51Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]/C
+                         clock pessimism              0.578     9.059    
+                         clock uncertainty           -0.074     8.985    
+    SLICE_X51Y65         FDRE (Setup_fdre_C_D)        0.031     9.016    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]
+  -------------------------------------------------------------------
+                         required time                          9.016    
+                         arrival time                         -12.004    
+  -------------------------------------------------------------------
+                         slack                                 -2.989    
+
+Slack (VIOLATED) :        -2.837ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        12.207ns  (logic 4.031ns (33.021%)  route 8.176ns (66.979%))
+  Logic Levels:           18  (CARRY4=6 LUT2=1 LUT3=1 LUT4=2 LUT5=4 LUT6=4)
+  Clock Path Skew:        -0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.520ns = ( 8.480 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.797    10.262    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X51Y66         LUT3 (Prop_lut3_I1_O)        0.301    10.563 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1/O
+                         net (fo=5, routed)           0.734    11.296    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1_n_0
+    SLICE_X52Y66         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.432     8.480    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X52Y66         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]/C
+                         clock pessimism              0.578     9.058    
+                         clock uncertainty           -0.074     8.984    
+    SLICE_X52Y66         FDRE (Setup_fdre_C_R)       -0.524     8.460    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[1]
+  -------------------------------------------------------------------
+                         required time                          8.460    
+                         arrival time                         -11.296    
+  -------------------------------------------------------------------
+                         slack                                 -2.837    
+
+Slack (VIOLATED) :        -2.794ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        12.167ns  (logic 4.031ns (33.131%)  route 8.136ns (66.869%))
+  Logic Levels:           18  (CARRY4=6 LUT2=1 LUT3=1 LUT4=2 LUT5=4 LUT6=4)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.518ns = ( 8.482 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.797    10.262    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X51Y66         LUT3 (Prop_lut3_I1_O)        0.301    10.563 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1/O
+                         net (fo=5, routed)           0.693    11.256    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1_n_0
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.434     8.482    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]/C
+                         clock pessimism              0.578     9.060    
+                         clock uncertainty           -0.074     8.986    
+    SLICE_X50Y64         FDRE (Setup_fdre_C_R)       -0.524     8.462    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[2]
+  -------------------------------------------------------------------
+                         required time                          8.462    
+                         arrival time                         -11.256    
+  -------------------------------------------------------------------
+                         slack                                 -2.794    
+
+Slack (VIOLATED) :        -2.794ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        12.167ns  (logic 4.031ns (33.131%)  route 8.136ns (66.869%))
+  Logic Levels:           18  (CARRY4=6 LUT2=1 LUT3=1 LUT4=2 LUT5=4 LUT6=4)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.518ns = ( 8.482 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.797    10.262    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X51Y66         LUT3 (Prop_lut3_I1_O)        0.301    10.563 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1/O
+                         net (fo=5, routed)           0.693    11.256    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1_n_0
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.434     8.482    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X50Y64         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]/C
+                         clock pessimism              0.578     9.060    
+                         clock uncertainty           -0.074     8.986    
+    SLICE_X50Y64         FDRE (Setup_fdre_C_R)       -0.524     8.462    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]
+  -------------------------------------------------------------------
+                         required time                          8.462    
+                         arrival time                         -11.256    
+  -------------------------------------------------------------------
+                         slack                                 -2.794    
+
+Slack (VIOLATED) :        -2.788ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        12.239ns  (logic 4.031ns (32.934%)  route 8.208ns (67.066%))
+  Logic Levels:           18  (CARRY4=6 LUT2=1 LUT3=1 LUT4=2 LUT5=4 LUT6=4)
+  Clock Path Skew:        -0.045ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.520ns = ( 8.480 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.564ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.797    10.262    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X51Y66         LUT3 (Prop_lut3_I1_O)        0.301    10.563 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1/O
+                         net (fo=5, routed)           0.766    11.329    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1_n_0
+    SLICE_X49Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.432     8.480    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X49Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]/C
+                         clock pessimism              0.564     9.044    
+                         clock uncertainty           -0.074     8.970    
+    SLICE_X49Y65         FDRE (Setup_fdre_C_R)       -0.429     8.541    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[0]
+  -------------------------------------------------------------------
+                         required time                          8.541    
+                         arrival time                         -11.329    
+  -------------------------------------------------------------------
+                         slack                                 -2.788    
+
+Slack (VIOLATED) :        -2.765ns  (required time - arrival time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@10.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        12.232ns  (logic 4.031ns (32.956%)  route 8.201ns (67.044%))
+  Logic Levels:           18  (CARRY4=6 LUT2=1 LUT3=1 LUT4=2 LUT5=4 LUT6=4)
+  Clock Path Skew:        -0.030ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.519ns = ( 8.481 - 10.000 ) 
+    Source Clock Delay      (SCD):    -0.911ns
+    Clock Pessimism Removal (CPR):    0.578ns
+  Clock Uncertainty:      0.074ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.131ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.489     1.489 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.722    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.946    -4.224 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.563    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.467 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.556    -0.911    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X50Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y58         FDRE (Prop_fdre_C_Q)         0.518    -0.393 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[27]/Q
+                         net (fo=6, routed)           0.485     0.092    design_1_i/fadd_p2_wrap_0/inst/u1/x2[26]
+    SLICE_X51Y58         LUT4 (Prop_lut4_I1_O)        0.124     0.216 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4/O
+                         net (fo=2, routed)           0.597     0.813    design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_4_n_0
+    SLICE_X49Y58         LUT5 (Prop_lut5_I1_O)        0.124     0.937 r  design_1_i/fadd_p2_wrap_0/inst/u1/eydreg[1]_i_2/O
+                         net (fo=6, routed)           0.479     1.416    design_1_i/fadd_p2_wrap_0/inst/u1/p_0_in__0[0]
+    SLICE_X48Y59         LUT2 (Prop_lut2_I1_O)        0.124     1.540 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21/O
+                         net (fo=1, routed)           0.000     1.540    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_21_n_0
+    SLICE_X48Y59         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.547     2.087 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12/O[2]
+                         net (fo=5, routed)           0.989     3.075    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_reg_i_12_n_5
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.302     3.377 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8/O
+                         net (fo=4, routed)           0.597     3.974    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_8_n_0
+    SLICE_X50Y60         LUT5 (Prop_lut5_I3_O)        0.124     4.098 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4/O
+                         net (fo=43, routed)          0.378     4.476    design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_4_n_0
+    SLICE_X49Y60         LUT6 (Prop_lut6_I2_O)        0.124     4.600 r  design_1_i/fadd_p2_wrap_0/inst/u1/selreg_i_1/O
+                         net (fo=70, routed)          0.856     5.456    design_1_i/fadd_p2_wrap_0/inst/u1/sel
+    SLICE_X54Y58         LUT6 (Prop_lut6_I4_O)        0.124     5.580 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63/O
+                         net (fo=4, routed)           0.834     6.414    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_63_n_0
+    SLICE_X50Y61         LUT5 (Prop_lut5_I2_O)        0.124     6.538 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35/O
+                         net (fo=3, routed)           0.599     7.137    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_35_n_0
+    SLICE_X51Y63         LUT5 (Prop_lut5_I4_O)        0.124     7.261 r  design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19/O
+                         net (fo=2, routed)           0.164     7.425    design_1_i/fadd_p2_wrap_0/inst/u1/stckreg_i_19_n_0
+    SLICE_X51Y63         LUT6 (Prop_lut6_I5_O)        0.124     7.549 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5/O
+                         net (fo=2, routed)           0.669     8.218    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_5_n_0
+    SLICE_X52Y59         LUT4 (Prop_lut4_I0_O)        0.124     8.342 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9/O
+                         net (fo=1, routed)           0.000     8.342    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg[11]_i_9_n_0
+    SLICE_X52Y59         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     8.875 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.875    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[11]_i_2_n_0
+    SLICE_X52Y60         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.992 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     8.992    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[15]_i_2_n_0
+    SLICE_X52Y61         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.109 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.109    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[19]_i_2_n_0
+    SLICE_X52Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     9.226 r  design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     9.226    design_1_i/fadd_p2_wrap_0/inst/u1/mydreg_reg[23]_i_2_n_0
+    SLICE_X52Y63         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     9.465 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[4]_i_3/O[2]
+                         net (fo=55, routed)          0.797    10.262    design_1_i/fadd_p2_wrap_0/inst/u1/p_1_in
+    SLICE_X51Y66         LUT3 (Prop_lut3_I1_O)        0.301    10.563 r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1/O
+                         net (fo=5, routed)           0.758    11.321    design_1_i/fadd_p2_wrap_0/inst/u1/sereg[4]_i_1_n_0
+    SLICE_X51Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000    10.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         1.418    11.418 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.580    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.204     5.376 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.957    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     7.048 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         1.433     8.481    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X51Y65         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]/C
+                         clock pessimism              0.578     9.059    
+                         clock uncertainty           -0.074     8.985    
+    SLICE_X51Y65         FDRE (Setup_fdre_C_R)       -0.429     8.556    design_1_i/fadd_p2_wrap_0/inst/u1/sereg_reg[3]
+  -------------------------------------------------------------------
+                         required time                          8.556    
+                         arrival time                         -11.321    
+  -------------------------------------------------------------------
+                         slack                                 -2.765    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.142ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.212ns  (logic 0.141ns (66.526%)  route 0.071ns (33.474%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.824ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.238ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X48Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y58         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]/Q
+                         net (fo=7, routed)           0.071    -0.374    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[30]
+    SLICE_X48Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.824    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X48Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]/C
+                         clock pessimism              0.238    -0.586    
+    SLICE_X48Y58         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[31]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.374    
+  -------------------------------------------------------------------
+                         slack                                  0.142    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.220ns  (logic 0.141ns (64.051%)  route 0.079ns (35.949%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.824ns
+    Source Clock Delay      (SCD):    -0.587ns
+    Clock Pessimism Removal (CPR):    -0.237ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.560    -0.587    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y60         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y60         FDRE (Prop_fdre_C_Q)         0.141    -0.446 r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/Q
+                         net (fo=7, routed)           0.079    -0.367    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[13]
+    SLICE_X51Y60         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.824    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y60         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/C
+                         clock pessimism              0.237    -0.587    
+    SLICE_X51Y60         FDRE (Hold_fdre_C_D)         0.072    -0.515    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]
+  -------------------------------------------------------------------
+                         required time                          0.515    
+                         arrival time                          -0.367    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.220ns  (logic 0.141ns (64.033%)  route 0.079ns (35.967%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.823ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.237ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y59         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y59         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]/Q
+                         net (fo=7, routed)           0.079    -0.366    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[5]
+    SLICE_X51Y59         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.823    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y59         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]/C
+                         clock pessimism              0.237    -0.586    
+    SLICE_X51Y59         FDRE (Hold_fdre_C_D)         0.072    -0.514    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[6]
+  -------------------------------------------------------------------
+                         required time                          0.514    
+                         arrival time                          -0.366    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.150ns  (arrival time - required time)
+  Source:                 design_1_i/fadd_p2_wrap_0/inst/u1/y_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.241ns  (logic 0.141ns (58.505%)  route 0.100ns (41.495%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.796ns
+    Source Clock Delay      (SCD):    -0.558ns
+    Clock Pessimism Removal (CPR):    -0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.589    -0.558    design_1_i/fadd_p2_wrap_0/inst/u1/clk
+    SLICE_X61Y59         FDRE                                         r  design_1_i/fadd_p2_wrap_0/inst/u1/y_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y59         FDRE (Prop_fdre_C_Q)         0.141    -0.417 r  design_1_i/fadd_p2_wrap_0/inst/u1/y_reg[13]/Q
+                         net (fo=1, routed)           0.100    -0.317    design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[13]
+    SLICE_X59Y59         FDRE                                         r  design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.859    -0.796    design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X59Y59         FDRE                                         r  design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/C
+                         clock pessimism              0.254    -0.542    
+    SLICE_X59Y59         FDRE (Hold_fdre_C_D)         0.075    -0.467    design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]
+  -------------------------------------------------------------------
+                         required time                          0.467    
+                         arrival time                          -0.317    
+  -------------------------------------------------------------------
+                         slack                                  0.150    
+
+Slack (MET) :             0.150ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.220ns  (logic 0.141ns (64.033%)  route 0.079ns (35.967%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.823ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.237ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y59         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y59         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/Q
+                         net (fo=10, routed)          0.079    -0.366    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[0]
+    SLICE_X51Y59         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.823    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y59         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/C
+                         clock pessimism              0.237    -0.586    
+    SLICE_X51Y59         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.366    
+  -------------------------------------------------------------------
+                         slack                                  0.150    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.221ns  (logic 0.141ns (63.753%)  route 0.080ns (36.247%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.823ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.237ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y58         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y58         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/Q
+                         net (fo=7, routed)           0.080    -0.365    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[11]
+    SLICE_X51Y58         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.823    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X51Y58         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/C
+                         clock pessimism              0.237    -0.586    
+    SLICE_X51Y58         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.365    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.221ns  (logic 0.141ns (63.753%)  route 0.080ns (36.247%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.824ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.238ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X49Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y58         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]/Q
+                         net (fo=8, routed)           0.080    -0.365    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[25]
+    SLICE_X49Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.824    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X49Y58         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]/C
+                         clock pessimism              0.238    -0.586    
+    SLICE_X49Y58         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[26]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.365    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.221ns  (logic 0.141ns (63.734%)  route 0.080ns (36.266%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.824ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.238ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X49Y57         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y57         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]/Q
+                         net (fo=4, routed)           0.080    -0.365    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[23]
+    SLICE_X49Y57         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.824    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X49Y57         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]/C
+                         clock pessimism              0.238    -0.586    
+    SLICE_X49Y57         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[24]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.365    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.221ns  (logic 0.141ns (63.734%)  route 0.080ns (36.266%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.823ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.237ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X53Y59         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y59         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]/Q
+                         net (fo=7, routed)           0.080    -0.365    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[6]
+    SLICE_X53Y59         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.823    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X53Y59         FDRE                                         r  design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]/C
+                         clock pessimism              0.237    -0.586    
+    SLICE_X53Y59         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[7]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.365    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.221ns  (logic 0.141ns (63.734%)  route 0.080ns (36.266%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.824ns
+    Source Clock Delay      (SCD):    -0.586ns
+    Clock Pessimism Removal (CPR):    -0.238ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.257     0.257 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.697    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.356    -1.659 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.173    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.147 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.561    -0.586    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X49Y59         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y59         FDRE (Prop_fdre_C_Q)         0.141    -0.445 r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]/Q
+                         net (fo=9, routed)           0.080    -0.365    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/d[24]
+    SLICE_X49Y59         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  sys_clock (IN)
+                         net (fo=0)                   0.000     0.000    design_1_i/clk_wiz_0/inst/clk_in1
+    E3                   IBUF (Prop_ibuf_I_O)         0.445     0.445 r  design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.925    design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y1      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.138    -2.213 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.684    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.655 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=235, routed)         0.831    -0.824    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/clk
+    SLICE_X49Y59         FDRE                                         r  design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]/C
+                         clock pessimism              0.238    -0.586    
+    SLICE_X49Y59         FDRE (Hold_fdre_C_D)         0.070    -0.516    design_1_i/c_shift_ram_1/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[25]
+  -------------------------------------------------------------------
+                         required time                          0.516    
+                         arrival time                          -0.365    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_design_1_clk_wiz_0_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16   design_1_i/clk_wiz_0/inst/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X52Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[10]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X51Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[11]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X51Y58     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X51Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[13]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X51Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X51Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[15]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X52Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[16]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X51Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[17]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y62     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[19]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y62     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[22]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X50Y62     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[23]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[10]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[10]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[11]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[11]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[12]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X59Y59     design_1_i/c_shift_ram_2/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[13]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[10]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[11]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[13]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y60     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[14]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[15]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X52Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[16]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[17]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X50Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[18]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X51Y59     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[1]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X50Y61     design_1_i/c_shift_ram_0/U0/i_synth/i_bb_inst/gen_output_regs.output_regs/i_no_async_controls.output_reg[20]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_design_1_clk_wiz_0_0
+  To Clock:  clkfbout_design_1_clk_wiz_0_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_design_1_clk_wiz_0_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         10.000      7.845      BUFGCTRL_X0Y17   design_1_i/clk_wiz_0/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y1  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

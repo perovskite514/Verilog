@@ -1,0 +1,28 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module design_1_wrapper.design_1_i.blk_mem_gen_0.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module design_1_wrapper.design_1_i.blk_mem_gen_1.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+
+Time: 25 ns Started: 25 ns Scope: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line:5309
+Warning: AXI_ERRM_RREADY_X: When not in reset, a value of X on RREADY is not permitted. Spec: section A3.1.2.
+Time: 25 ns  Iteration: 2  Process: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP//design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP  Scope: design_1_wrapper.design_1_i.axi_protocol_checker_0.inst.REP  File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line: 5310
+
+Time: 35 ns Started: 35 ns Scope: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line:5309
+Warning: AXI_ERRM_RREADY_X: When not in reset, a value of X on RREADY is not permitted. Spec: section A3.1.2.
+Time: 35 ns  Iteration: 2  Process: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP//design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP  Scope: design_1_wrapper.design_1_i.axi_protocol_checker_0.inst.REP  File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line: 5310
+
+Time: 45 ns Started: 45 ns Scope: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line:5309
+Warning: AXI_ERRM_RREADY_X: When not in reset, a value of X on RREADY is not permitted. Spec: section A3.1.2.
+Time: 45 ns  Iteration: 2  Process: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP//design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP  Scope: design_1_wrapper.design_1_i.axi_protocol_checker_0.inst.REP  File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line: 5310
+
+Time: 55 ns Started: 55 ns Scope: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line:5309
+Warning: AXI_ERRM_RREADY_X: When not in reset, a value of X on RREADY is not permitted. Spec: section A3.1.2.
+Time: 55 ns  Iteration: 2  Process: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP//design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP  Scope: design_1_wrapper.design_1_i.axi_protocol_checker_0.inst.REP  File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line: 5310
+
+Time: 65 ns Started: 65 ns Scope: /design_1_wrapper/design_1_i/axi_protocol_checker_0/inst/REP File: /wrk/ci/prod/2020.2/sw/continuous/733/packages/customer/vivado/data/ip/xilinx/axi_protocol_checker_v2_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv Line:5309
+Warning: AXI_ERRM_RREADY_X: When not in reset, a value of X on RREADY is not permitted. Spec: section A3.1.2.
+Time

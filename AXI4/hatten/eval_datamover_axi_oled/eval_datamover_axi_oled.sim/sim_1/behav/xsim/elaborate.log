@@ -1,0 +1,78 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b65917cb581e49299f29d57b97f6adf7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L xlconstant_v1_1_7 -L axi_bram_ctrl_v4_1_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlslice_v1_0_2 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'bram_rst_a' is not connected on this instance [C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/sim/design_1.v:101]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/sim/design_1.v:180]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi_wrap.v" Line 3. Module datamover_axi_wrap doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi.sv" Line 2. Module datamover_axi doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 102. Module oledrgb(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 2. Module spicom(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/pulse_btn.v" Line 3. Module pulse_btn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi_wrap.v" Line 3. Module datamover_axi_wrap doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi.sv" Line 2. Module datamover_axi doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 102. Module oledrgb(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 2. Module spicom(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/pulse_btn.v" Line 3. Module pulse_btn doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_1_4.axi_bram_ctrl_funcs
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_4.axi_lite [\axi_lite(c_s_axi_addr_width=14,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_4.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_s_axi_addr_...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_4.axi_bram_ctrl [\axi_bram_ctrl(c_s_axi_addr_widt...]
+Compiling architecture design_1_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_0 [design_1_axi_bram_ctrl_0_0_defau...]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=15.62...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.datamover_axi
+Compiling module xil_defaultlib.datamover_axi_wrap
+Compiling module xil_defaultlib.design_1_datamover_axi_wrap_0_0
+Compiling module xil_defaultlib.spicom(NS_PER_CLK=100)
+Compiling module xil_defaultlib.oledrgb(NS_PER_CLK=100)
+Compiling module xil_defaultlib.design_1_oledrgb_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling module xil_defaultlib.pulse_btn
+Compiling module xil_defaultlib.design_1_pulse_btn_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_1_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.design_1_xlslice_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 12:33:17 2021
+# Process ID: 15972
+# Current directory: D:/uart_loopback_win/test_uart_loopback_9600
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16124 D:\uart_loopback_win\test_uart_loopback_9600\test_uart_loopback_9600.xpr
+# Log file: D:/uart_loopback_win/test_uart_loopback_9600/vivado.log
+# Journal file: D:/uart_loopback_win/test_uart_loopback_9600\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/uart_loopback_win/test_uart_loopback_9600/test_uart_loopback_9600.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+connect_hw_server -allow_non_jtag

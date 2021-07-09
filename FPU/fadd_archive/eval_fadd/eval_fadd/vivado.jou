@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  3 13:13:09 2021
+# Process ID: 20300
+# Current directory: D:/fadd_archive/eval_fadd/eval_fadd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19108 D:\fadd_archive\eval_fadd\eval_fadd\eval_fadd.xpr
+# Log file: D:/fadd_archive/eval_fadd/eval_fadd/vivado.log
+# Journal file: D:/fadd_archive/eval_fadd/eval_fadd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.xpr
+open_run impl_1
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+refresh_design

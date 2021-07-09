@@ -1,0 +1,259 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  8 14:37:01 2021
+# Process ID: 16512
+# Current directory: C:/axi_archive/eval_datamover_axi_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7180 C:\axi_archive\eval_datamover_axi_oled\eval_datamover_axi_oled.xpr
+# Log file: C:/axi_archive/eval_datamover_axi_oled/vivado.log
+# Journal file: C:/axi_archive/eval_datamover_axi_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/../../../../opt/vivado-boards-master/new/board_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 1018.914 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_module_reference design_1_datamover_axi_wrap_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Reading block design file <C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:module_ref:pulse_btn:1.0 - pulse_btn_0
+Adding component instance block -- xilinx.com:module_ref:oledrgb:1.0 - oledrgb_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:module_ref:datamover_axi_wrap:1.0 - datamover_axi_wrap_0
+Successfully read diagram <design_1> from block design file <C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_datamover_axi_wrap_0_0 from datamover_axi_wrap_v1_0 1.0 to datamover_axi_wrap_v1_0 1.0
+Wrote  : <C:\axi_archive\eval_datamover_axi_oled\eval_datamover_axi_oled.srcs\sources_1\bd\design_1\design_1.bd> 
+upgrade_ip: Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1061.367 ; gain = 42.453
+update_module_reference: Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1061.367 ; gain = 42.453
+update_module_reference design_1_datamover_axi_wrap_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rstn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rstn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_datamover_axi_wrap_0_0 from datamover_axi_wrap_v1_0 1.0 to datamover_axi_wrap_v1_0 1.0
+Wrote  : <C:\axi_archive\eval_datamover_axi_oled\eval_datamover_axi_oled.srcs\sources_1\bd\design_1\design_1.bd> 
+generate_target Simulation [get_files C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+Wrote  : <C:\axi_archive\eval_datamover_axi_oled\eval_datamover_axi_oled.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block datamover_axi_wrap_0 .
+Exporting to file C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1192.879 ; gain = 118.746
+export_ip_user_files -of_objects [get_files C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/sim_scripts -ip_user_files_dir C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files -ipstatic_source_dir C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.cache/compile_simlib/modelsim} {questa=C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.cache/compile_simlib/questa} {riviera=C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.cache/compile_simlib/riviera} {activehdl=C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/design_1_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/datamover_axi.coe'
+INFO: [SIM-utils-43] Exported 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/oled_gram.hex'
+INFO: [SIM-utils-43] Exported 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/oled_ini_com.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/axi_archive/datamover_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamover_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/datamover_axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamover_axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/pulse_btn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_btn
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/oled-rgb-gram-if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spicom
+INFO: [VRFC 10-311] analyzing module oledrgb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_datamover_axi_wrap_0_0/sim/design_1_datamover_axi_wrap_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_datamover_axi_wrap_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_pulse_btn_0_0/sim/design_1_pulse_btn_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_pulse_btn_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_oledrgb_0_0/sim/design_1_oledrgb_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_oledrgb_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_bram_ctrl_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_proc_sys_reset_0_0'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim'
+"xelab -wto b65917cb581e49299f29d57b97f6adf7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L xlconstant_v1_1_7 -L axi_bram_ctrl_v4_1_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlslice_v1_0_2 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b65917cb581e49299f29d57b97f6adf7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L xlconstant_v1_1_7 -L axi_bram_ctrl_v4_1_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlslice_v1_0_2 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'bram_rst_a' is not connected on this instance [C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/sim/design_1.v:101]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.ip_user_files/bd/design_1/sim/design_1.v:180]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi_wrap.v" Line 3. Module datamover_axi_wrap doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi.sv" Line 2. Module datamover_axi doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 102. Module oledrgb(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 2. Module spicom(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/pulse_btn.v" Line 3. Module pulse_btn doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi_wrap.v" Line 3. Module datamover_axi_wrap doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/datamover_axi.sv" Line 2. Module datamover_axi doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 102. Module oledrgb(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/oled-rgb-gram-if.v" Line 2. Module spicom(NS_PER_CLK=100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/axi_archive/pulse_btn.v" Line 3. Module pulse_btn doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_1_4.axi_bram_ctrl_funcs
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_4.axi_lite [\axi_lite(c_s_axi_addr_width=14,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_4.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_s_axi_addr_...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_4.axi_bram_ctrl [\axi_bram_ctrl(c_s_axi_addr_widt...]
+Compiling architecture design_1_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_0 [design_1_axi_bram_ctrl_0_0_defau...]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=15.62...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.datamover_axi
+Compiling module xil_defaultlib.datamover_axi_wrap
+Compiling module xil_defaultlib.design_1_datamover_axi_wrap_0_0
+Compiling module xil_defaultlib.spicom(NS_PER_CLK=100)
+Compiling module xil_defaultlib.oledrgb(NS_PER_CLK=100)
+Compiling module xil_defaultlib.design_1_oledrgb_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_proc_sys_reset_0_0_arch of entity xil_defaultlib.design_1_proc_sys_reset_0_0 [design_1_proc_sys_reset_0_0_defa...]
+Compiling module xil_defaultlib.pulse_btn
+Compiling module xil_defaultlib.design_1_pulse_btn_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_1_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.design_1_xlslice_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/xsim.dir/design_1_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim/xsim.dir/design_1_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jul  8 14:39:55 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul  8 14:39:55 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1192.879 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_behav -key {Behavioral:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/axi_archive/eval_datamover_axi/design_1_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//axi_bram_ctrl_0/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_1_wrapper/design_1_i//datamover_axi_wrap_0/axi
+Time resolution is 1 ps
+open_wave_config C:/axi_archive/eval_datamover_axi/design_1_wrapper_behav.wcfg
+WARNING: Simulation object /design_1_wrapper/led was not found in the design.
+WARNING: Simulation object /design_1_wrapper/design_1_i/axi_protocol_checker_0/pc_status was not found in the design.
+WARNING: Simulation object /design_1_wrapper/design_1_i/axi_protocol_checker_0/pc_asserted was not found in the design.
+WARNING: Simulation object /design_1_wrapper/ledtrig was not found in the design.
+WARNING: Simulation object /design_1_wrapper/design_1_i/c_counter_binary_0_Q was not found in the design.
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module design_1_wrapper.design_1_i.blk_mem_gen_0.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1322.898 ; gain = 124.449
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1322.898 ; gain = 130.020
+run 10 us
+relaunch_sim

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 09:28:22 2021
+# Process ID: 20036
+# Current directory: D:/uart_loopback_win
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15528 D:\uart_loopback_win\test_uart.sim.wdb
+# Log file: D:/uart_loopback_win/vivado.log
+# Journal file: D:/uart_loopback_win\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {D:\uart_loopback_win\test_uart.sim.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.695 ; gain = 0.000
+open_wave_database: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.695 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 12:36:25 2021...

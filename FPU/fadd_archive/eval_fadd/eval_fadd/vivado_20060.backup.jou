@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun  3 02:29:24 2021
+# Process ID: 20060
+# Current directory: D:/fadd_archive/eval_fadd/eval_fadd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6796 D:\fadd_archive\eval_fadd\eval_fadd\eval_fadd.xpr
+# Log file: D:/fadd_archive/eval_fadd/eval_fadd/vivado.log
+# Journal file: D:/fadd_archive/eval_fadd/eval_fadd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_fadd_wrap_0_0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  design_1_clk_wiz_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_clk_wiz_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+export_ip_user_files -of_objects [get_files D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_fadd_wrap_0_0_synth_1 design_1_clk_wiz_0_0_synth_1 -jobs 12
+wait_on_run design_1_fadd_wrap_0_0_synth_1
+wait_on_run design_1_clk_wiz_0_0_synth_1
+export_simulation -of_objects [get_files D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.ip_user_files/sim_scripts -ip_user_files_dir D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.ip_user_files -ipstatic_source_dir D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.cache/compile_simlib/modelsim} {questa=D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.cache/compile_simlib/questa} {riviera=D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.cache/compile_simlib/riviera} {activehdl=D:/fadd_archive/eval_fadd/eval_fadd/eval_fadd.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+xhub::uninstall [xhub::get_xitems digilentinc.com:xilinx_board_store:arty:1.1]
+set_param board.repoPaths {C:/Users/tansei/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store}
+xhub::install [xhub::get_xitems digilentinc.com:xilinx_board_store:arty:1.1]

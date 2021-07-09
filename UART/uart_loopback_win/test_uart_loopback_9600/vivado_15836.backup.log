@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 09:29:55 2021
+# Process ID: 15836
+# Current directory: D:/uart_loopback_win/test_uart_loopback_9600
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11940 D:\uart_loopback_win\test_uart_loopback_9600\test_uart_loopback_9600.xpr
+# Log file: D:/uart_loopback_win/test_uart_loopback_9600/vivado.log
+# Journal file: D:/uart_loopback_win/test_uart_loopback_9600\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/uart_loopback_win/test_uart_loopback_9600/test_uart_loopback_9600.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/../../../../opt/vivado-boards-master/new/board_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.836 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 12:33:14 2021...

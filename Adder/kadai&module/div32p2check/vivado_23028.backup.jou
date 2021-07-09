@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 20 13:23:06 2021
+# Process ID: 23028
+# Current directory: D:/div_archive/div32p2check
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17696 D:\div_archive\div32p2check\div32p2check.xpr
+# Log file: D:/div_archive/div32p2check/vivado.log
+# Journal file: D:/div_archive/div32p2check\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/div_archive/div32p2check/div32p2check.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+update_module_reference design_1_div32p2_0_0
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run impl_1

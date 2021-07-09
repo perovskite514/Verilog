@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 17 23:14:25 2021
+# Process ID: 13844
+# Current directory: D:/uart_loopback_win_2/test_uart_loopback_9600
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14988 D:\uart_loopback_win_2\test_uart_loopback_9600\test_uart_loopback_9600.xpr
+# Log file: D:/uart_loopback_win_2/test_uart_loopback_9600/vivado.log
+# Journal file: D:/uart_loopback_win_2/test_uart_loopback_9600\vivado.jou
+#-----------------------------------------------------------
+start_gopeopen_project D:/uart_loopback_win_2/test_uart_loopback_9600/test_uart_loopback_9600.xpr
+INFO: [Project 1-313] Project file moved from 'D:/uart_loopback_win/test_uart_loopback_9600' since last save.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'D:/../../../../opt/vivado-boards-master/new/board_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ipopeopen_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:12 . Memory (MB): peak = 1014.953 ; gain = 0.0updupdate_compile_order -fileset sourcesopen_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A28BE6A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2358.562 ; gain = 1339.270
+set_property PROGRAM.FILE {D:/uart_loopback_win_2/test_uart_loopback_9600/test_uart_loopback_9600.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/uart_loopback_win_2/test_uart_loopback_9600/test_uart_loopback_9600.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 17 23:19:54 2021...

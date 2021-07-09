@@ -1,0 +1,7 @@
+set_property -dict { PACKAGE_PIN G13   IOSTANDARD LVCMOS33 } [get_ports { oled_cs }]; #IO_0_15 Sch=ja[1]
+set_property -dict { PACKAGE_PIN B11   IOSTANDARD LVCMOS33 } [get_ports { oled_mosi }]; #IO_L4P_T0_15 Sch=ja[2]
+set_property -dict { PACKAGE_PIN D12   IOSTANDARD LVCMOS33 } [get_ports { oled_sclk }]; #IO_L6P_T0_15 Sch=ja[4]
+set_property -dict { PACKAGE_PIN D13   IOSTANDARD LVCMOS33 } [get_ports { oled_dc }]; #IO_L6N_T0_VREF_15 Sch=ja[7]
+set_property -dict { PACKAGE_PIN B18   IOSTANDARD LVCMOS33 } [get_ports { oled_res }]; #IO_L10P_T1_AD11P_15 Sch=ja[8]
+set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { oled_vcc_en }]; #IO_L10N_T1_AD11N_15 Sch=ja[9]
+set_property -dict { PACKAGE_PIN K16 IOSTANDARD LVCMOS33 } [get_ports { oled_pmod_en }]; #IO_25_15 Sch=ja[10]

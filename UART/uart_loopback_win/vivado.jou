@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 09:28:22 2021
+# Process ID: 20036
+# Current directory: D:/uart_loopback_win
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15528 D:\uart_loopback_win\test_uart.sim.wdb
+# Log file: D:/uart_loopback_win/vivado.log
+# Journal file: D:/uart_loopback_win\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {D:\uart_loopback_win\test_uart.sim.wdb}
+close_sim

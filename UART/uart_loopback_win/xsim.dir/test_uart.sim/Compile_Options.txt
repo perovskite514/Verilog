@@ -1,0 +1,1 @@
+-debug "typical" "test_uart" -s "test_uart.sim" 

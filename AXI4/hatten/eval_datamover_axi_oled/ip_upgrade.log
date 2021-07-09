@@ -1,0 +1,215 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 21 21:40:24 2021
+| Host         : LAPTOP-FN0HITC1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_1_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 21 21:40:24 2021
+| Host         : LAPTOP-FN0HITC1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 21 21:40:24 2021
+| Host         : LAPTOP-FN0HITC1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 21 21:40:24 2021
+| Host         : LAPTOP-FN0HITC1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_bram_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_bram_ctrl_0_0 (xilinx.com:ip:axi_bram_ctrl:4.1) from (Rev. 2) to (Rev. 4)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot remove parameter C_SELECT_XPM : there is no parameter called C_SELECT_XPM in axi_bram_ctrl_v4_1
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Jul  8 01:14:24 2020
+| Host         : hodaka running 64-bit Debian GNU/Linux 9.12 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlslice_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlslice_0_0 (xilinx.com:ip:xlslice:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Jul  8 01:14:24 2020
+| Host         : hodaka running 64-bit Debian GNU/Linux 9.12 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_1_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Jul  8 01:14:24 2020
+| Host         : hodaka running 64-bit Debian GNU/Linux 9.12 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Jul  8 01:14:24 2020
+| Host         : hodaka running 64-bit Debian GNU/Linux 9.12 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Jul  8 01:14:24 2020
+| Host         : hodaka running 64-bit Debian GNU/Linux 9.12 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_blk_mem_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_blk_mem_gen_0_0 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Jul  8 01:14:24 2020
+| Host         : hodaka running 64-bit Debian GNU/Linux 9.12 (stretch)
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_bram_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_bram_ctrl_0_0 (xilinx.com:ip:axi_bram_ctrl:4.1) to (Rev. 2)
+
+2. Upgrade messages
+-------------------
+
+Removed parameter C_SELECT_XPM
+

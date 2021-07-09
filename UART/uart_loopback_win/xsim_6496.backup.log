@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 17 21:04:22 2021
+# Process ID: 6496
+# Current directory: D:/uart_loopback_win
+# Command line: xsim.exe -source {xsim.dir/test_uart.sim/xsim_script.tcl}
+# Log file: D:/uart_loopback_win/xsim.log
+# Journal file: D:/uart_loopback_win\xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/test_uart.sim/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+current_fileset: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1197.730 ; gain = 0.000
+INFO: [Common 17-344] 'current_fileset' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Jun 17 21:04:55 2021...

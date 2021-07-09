@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/uart_loopback_win/test_uart.sv,1623931260,systemVerilog,,D:/uart_loopback_win/uart_loopback.v,,test_uart,,,,,,,,
+D:/uart_loopback_win/uart_loopback.v,1623931260,systemVerilog,,D:/uart_loopback_win/uart_tx.sv,,uart_loopback,,,,,,,,
+D:/uart_loopback_win/uart_rx.sv,1623935878,systemVerilog,,,,uart_rx,,,,,,,,
+D:/uart_loopback_win/uart_tx.sv,1623931260,systemVerilog,,D:/uart_loopback_win/uart_rx.sv,,uart_tx,,,,,,,,

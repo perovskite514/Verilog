@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  8 14:45:09 2021
+# Process ID: 20316
+# Current directory: C:/axi_archive/eval_datamover_axi_oled
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21108 C:\axi_archive\eval_datamover_axi_oled\eval_datamover_axi_oled.xpr
+# Log file: C:/axi_archive/eval_datamover_axi_oled/vivado.log
+# Journal file: C:/axi_archive/eval_datamover_axi_oled\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/axi_archive/eval_datamover_axi_oled/eval_datamover_axi_oled.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_datamover_axi_wrap_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
